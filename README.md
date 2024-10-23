@@ -17,3 +17,5 @@ Output and plotting folder
 In the folder labelled 'Output and plotting' theres a script that will merge two csv files for use in the script that plots out the graphs. 
 
 I will *obviously* edit this readme so it makes sense to someone other than me.  
+
+Jon Wade. 

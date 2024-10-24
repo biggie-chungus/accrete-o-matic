@@ -10,8 +10,9 @@ import copy
 
 def Olivine_(ol_percent, initial, elements):
     """
-    
-
+    Loop over the number of olivine fractionation steps to recalc liquid comps
+    D's from Beattie, P., Ford, C. & Russell, D. Partition coefficients for olvine-melt and
+351 orthopyroxene-melt systems. Contributions To Mineralogy And Petrology 109, 212-352 224 (1991).
     Parameters
     ----------
     ol_percent : integer
@@ -31,7 +32,7 @@ def Olivine_(ol_percent, initial, elements):
         olivine composition (oxide %)
 
     """
-    # loop over the number of olivine fractionation steps to recalc liquid comps
+    
     silicate_ox = copy.deepcopy(initial)
     
     

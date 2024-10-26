@@ -7,7 +7,7 @@ This is a script for tracking the core mantle partitioning behaviour of number o
 
 It allows for core/mantle partitioning to occur in the presence of an olivine fraction in the silicateand variable Carbon and Sulfur contents in the metal (these are set by the script ~line 721). Following on from other work, the script increments the pressure of core/mantle equilibrium progressively to a final value (peak pressure - variable 'p_splat' on line 720).  
 
-The script uses a the metal/silicate experimental data from the literature (see paper for deets) and olivine melt partitioning data, with the metal activities calculated at each step using the epsilon formula of Ma and interaction parameters from a variety of sources.  Full refs are given in the paper and I'll add here when I get a chance.  The partitioning data for Ni and Co should only be used 0 to 5 GPa (range over which each were fit).  Equations can obviously be changed and pressures likewise.  Note: some metal/silicate regressions in the literature use elements concentrations rather than mole fractions.  Additionally, 1/T term for W has been modified to include an offset from the Jennings et al paper which had smaller value at NBO/T's of ~2.7. Given there is a large uncertainty in the compositional effects of silicate melt on the M/S partitioning behaviour of W, which should be especially profound in the Fe-rich silicate melts here.
+The script uses a the metal/silicate experimental data from the literature (see paper for deets) and olivine melt partitioning data, with the metal activities calculated at each step using the epsilon formula of Ma and interaction parameters from a variety of sources.  Full refs are given in the paper and I'll add here when I get a chance.  The partitioning data for Ni and Co should only be used 0 to 5 GPa (range over which each were fit).  Equations can obviously be changed and pressures likewise.  Note: some metal/silicate regressions in the literature use elements concentrations rather than mole fractions.  Additionally, 1/T term for W has been modified to include an offset from the Jennings et al (DOI: 10.1016/j.gca.2020.09.035) paper which had smaller value for 1/T at NBO/T's of ~2.7. Given there is a large uncertainty in the compositional effects of silicate melt on the M/S partitioning behaviour of W, which should be especially profound in the Fe-rich silicate melts explored here, and Jennings' et al restricting their regression to modern 'mantle-like', we felt it acceptable to apply the offset of Jennings to that of Wade and Wood's earlier regression which encompassed wider silicate compositions. Obviously, this needs more work for better constraints.
 
 A warning - script is a bit messy  and comments within may not be useful. Theres also bits in the script that are there for other uses.  Or because I thought they were a good idea at the time....
 
@@ -15,7 +15,7 @@ another warning - its not exactly efficient!  because it loops over the various 
 **remember to make sure each instance outputs to a file with a different file name (line 688)**
 
 
-**Output_and_plotting_scripts **folder
+**Output_and_plotting_scripts ** folder
 
 In the folder labelled 'Output and plotting' theres a script that will merge two csv files for use in the script that plots out the graphs.
 
